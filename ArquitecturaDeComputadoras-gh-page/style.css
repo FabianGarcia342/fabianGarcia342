@@ -1,0 +1,186 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo para la barra de navegación */
+  .navbar {
+    background-color: #333;
+    overflow: hidden;
+    z-index: 3; /* Asegura que la barra de navegación esté en la parte superior del orden de apilamiento */
+
+  }
+  
+  /* Estilo para los elementos de la barra de navegación */
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Estilo para los elementos del menú desplegable */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  
+  }
+  
+  /* Estilo para el contenido del menú desplegable */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Estilo para la lista de opciones desplegables */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 3;
+  }
+  
+  /* Estilo para los elementos de la lista de opciones desplegables */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 2; /* Cambia de 1 a 2 */
+  }
+  
+  /* Cambia el color de fondo cuando pasas el ratón sobre las opciones */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Muestra el contenido del menú desplegable cuando pasas el ratón sobre él */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* Estilo para las imágenes en las esquinas */
+.corner-image {
+  position: fixed;
+  z-index: 2; /* Asegura que las imágenes estén sobre la barra de navegación */
+}
+
+.top-left {
+  top: 50px; /* Ajusta la posición desde la parte superior según tus necesidades */
+  left: 10px; /* Ajusta la posición desde la izquierda según tus necesidades */
+  width: 200px; /* Ancho específico para la imagen izquierda */
+  height: auto; /* Altura ajustada automáticamente para mantener la proporción original */
+}
+
+.top-right {
+  top: 50px; /* Ajusta la posición desde la parte superior según tus necesidades */
+  right: 10px; /* Ajusta la posición desde la derecha según tus necesidades */
+  width: 90px; /* Ancho específico para la imagen derecha */
+  height: auto; /* Altura ajustada automáticamente para mantener la proporción original */
+}
+/* Estilo para el título principal */
+h1 {
+  text-align: center;
+  font-size: 5em; /* Ajusta el tamaño del texto según tus necesidades */
+  margin-bottom: 50px; /* Ajusta el margen inferior según tus necesidades */
+  color: rgb(14, 13, 13); /* Cambia el color del texto a blanco para que sea visible sobre el fondo oscuro de la barra de navegación */
+}
+
+
+
+/* Estilo para el subtitulo */
+.subtitulo {
+  font-size: .5em; /* Ajusta el tamaño del texto según tus necesidades */
+  margin: 0; /* Elimina el margen predeterminado del elemento h2 */
+  padding: 0 10px; /* Añade márgenes a los lados del subtitulo según tus necesidades */
+}
+/* Estilo para el contenedor del texto */
+.texto-container {
+  text-align: justify;
+  margin: 20px auto; /* Ajusta el margen superior e inferior y centra horizontalmente */
+  max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  position: relative;
+  padding: 20px; /* Añade un relleno para crear un tipo de marco o cuadro */
+}
+
+/* Estilo para las barras laterales */
+.texto-container::before,
+.texto-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background-color: #4181bcb3; /* Color de las barras laterales */
+}
+
+/* Estilo para la barra lateral izquierda */
+.texto-container::before {
+  left: 0;
+}
+
+/* Estilo para la barra lateral derecha */
+.texto-container::after {
+  right: 0;
+}
+
+/* Estilo para el párrafo de texto */
+.texto1 {
+  font-size: 1.2em;
+  margin: 5; /* Elimina el margen predeterminado del párrafo */
+}
+
+/* Estilo para la imagen debajo del texto */
+.texto-container img {
+  display: block;
+  margin: 20px auto; /* Ajusta el margen superior e inferior y centra horizontalmente */
+  max-width: 100%; /* Hace que la imagen sea responsiva y no supere el ancho del contenedor */
+}
+
+h2{
+    background-color: blanchedalmond;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+ button{
+    background-color: #87F1DB;
+       width: 100%;
+    list-style-type: none;
+    text-align: center;
+ }
+
+h4{
+    
+    width: auto;
+    list-style-type: disc;
+    width: 70%;
+}
+p{
+    
+    font-language-override: normal;
+    width: auto;
+    text-align: justify;
+    list-style-type: disc;
+    width: 100%;
+
+}
+body{
+    background-color: #4181bcb3;
+}
+
